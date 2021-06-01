@@ -1,0 +1,118 @@
+﻿<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Data</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+
+<body class="container">
+    <br>
+
+    <!-- Sales Information Form -->
+    <!--<form id="sales-data-form">-->
+    <div class="card">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-auto">
+                    <div class="form-group">
+                        <label for="order-id">Order ID</label>
+                        <input type="number" class="form-control" id="order-id">
+                    </div>
+                </div>
+                <div class="col-auto">
+                    <div class="form-group">
+                        <label for="customer-name">Customer Name</label>
+                        <input type="text" class="form-control" id="customer-name">
+                    </div>
+                </div>
+                <div class="col-auto">
+                    <div class="form-group">
+                        <label for="product">Product</label>
+                        <input type="text" class="form-control" id="product">
+                    </div>
+                </div>
+                <div class="col-auto">
+                    <div class="form-group">
+                        <label for="category">Category</label>
+                        <input type="text" class="form-control" id="category">
+                    </div>
+                </div>
+                <div class="col-auto">
+                    <div class="form-group">
+                        <label for="order-date">Order Date</label>
+                        <input type="date" class="form-control" id="order-date">
+                    </div>
+                </div>
+                <div class="col-auto">
+                    <div class="form-group">
+                        <label for="shipped-date">Shipped Date</label>
+                        <input type="date" class="form-control" id="shipped-date">
+                    </div>
+                </div>
+                <div class="col-auto">
+                    <div class="form-group">
+                        <label for="quantity">Quantity</label>
+                        <input type="number" class="form-control" id="quantity">
+                    </div>
+                </div>
+                <div class="col-auto">
+                    <div class="form-group">
+                        <label for="price">Price</label>
+                        <input type="text" class="form-control" id="price">
+                    </div>
+                </div>
+                <div class="col-auto">
+                    <div class="form-group">
+                        <label for="total-sale">Total Sale Amount</label>
+                        <input type="text" class="form-control" id="total-sale">
+                    </div>
+                </div>
+                <div class="col-auto">
+                    <div class="form-group">
+                        <label for="salesperson">Salesperson</label>
+                        <input type="text" class="form-control" id="salesperson">
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div>
+                <button id="sales-btn" class="btn btn-outline-primary">Add Sales Data</button>
+                <!-- Attempts at different types of buttons to use to clear form data on click
+                    <input type="button" class="btn btn-outline-danger" onclick="myFunction()" value="Reset form">
+                    <button id="reset-form-btn" class="btn btn-outline-danger">Clear Form</button>-->
+            </div>
+        </div>
+    </div>
+    <!--</form>-->
+    <p></p>
+    <hr>
+
+    <!-- Sales Information Table -->
+    <div class="table-responsive-lg">
+        <table id="sales-tbl" class="table table-sm table-hover table-bordered">
+            <tr>
+                <th>Order ID</th>
+                <th>Customer Name</th>
+                <th>Product</th>
+                <th>Category</th>
+                <th>Order Date</th>
+                <th>Shipped Date</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Total Sale Amount</th>
+                <th>Salesperson</th>
+            </tr>
+        </table>
+    </div>
+
+
+    <script src="salesData.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
