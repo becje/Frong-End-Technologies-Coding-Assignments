@@ -1,0 +1,6 @@
+# npm install files
+node_modules
+
+# Visual Studio Code
+.vscode/
+.code-workspace
